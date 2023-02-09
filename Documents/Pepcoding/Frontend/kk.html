@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+    }
+    
+    h1,
+    h2 {
+        color: #333;
+    }
+    
+    nav {
+        background-color: #eee;
+        padding: 20px;
+        text-align: left;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+    nav a {
+        color: #333;
+        text-decoration: none;
+    }
+    
+    nav a:hover {
+        color: #999;
+    }
+    
+    #project-name {
+        margin-top: 30px;
+    }
+    
+    #project-description {
+        margin-top: 10px;
+        text-align: left;
+    }
+</style>
+
+<head>
+    <title>My Portfolio</title>
+    <script>
+        function showProject(projectName) {
+            var projects = {
+                "project1": "This is the description for project 1.",
+                "project2": "This is the description for project 2.",
+                "project3": "This is the description for project 3."
+            };
+
+            document.getElementById("project-name").innerHTML = projectName;
+            document.getElementById("project-description").innerHTML = projects[projectName];
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to my portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showProject('project1')">Project 1</a></li>
+            <li><a href="#" onclick="showProject('project2')">Project 2</a></li>
+            <li><a href="#" onclick="showProject('project3')">Project 3</a></li>
+        </ul>
+    </nav>
+    <h2 id="project-name"></h2>
+    <p id="project-description"></p>
+</body>
+
+</html>

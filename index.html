@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>
+        My first frontend project
+    </title>
+    <!-- style.css ko jodne ka head ka last 
+    head me script daalna allowed hai but suppose hmne kuch body me likha to hbm use access nhi kr paenge agr head me script hoga to
+    -->
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="ff">
+        <button id="mYfirstbutton"> Add Folder
+        </button>
+        <button id="textfile"> Add Text File
+    </button>
+    </div>
+    <div id="breadcumb">
+        <a purpose="path" rid="-1">Root</a>
+    </div>
+    <!-- div ek rectangle hota hai usme jitna maal bhroge utna bhr jaega . jitna maal daalte jaoge utni height bdhti jaegi-->
+    <div id="container">
+
+    </div>
+    <!-- template html page me nhi dikhta -->
+    <template id="myTemplate">
+        <div class="folder">
+            <span action="Edit">Edit</span>
+            <span action="Delete">Delete</span>
+            <span action="View">View</span>
+            <div purpose="name">name</div>
+
+        </div>
+        <a purpose="path" rid="-1"></a>
+    </template>
+
+    <script type="text/javascript " src="main.js "></script>
+</body>
+
+</html>

@@ -7,7 +7,7 @@
     <!-- style.css ko jodne ka head ka last 
     head me script daalna allowed hai but suppose hmne kuch body me likha to hbm use access nhi kr paenge agr head me script hoga to
     -->
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -25,19 +25,78 @@
     <div id="container">
 
     </div>
+
+
+    <div id="app">
+        <div id="app-titlebar">
+            <div id="app-title">This is my Title bar </div>
+                <div id="win-actions">
+                <span class="material-icons">minimize</span>
+                <span class="material-icons">fullscreen</span>
+                <span class="material-icons">close</span>
+                </div>
+        </div>
+        <div id="app-menubar">
+          
+        </div>
+        <div id="app-body">
+            This is my body
+        </div>
+        </div>
+
+    
+
     <!-- template html page me nhi dikhta -->
     <template id="myTemplate">
-        <div class="folder">
+        <div class="folder" rid="" pid="">
             <span action="Edit">Edit</span>
             <span action="Delete">Delete</span>
             <span action="View">View</span>
             <div purpose="name">name</div>
-
         </div>
-        <a purpose="path" rid="-1"></a>
+        <div class="file" rid="" pid="">
+            <span action="Edit">Edit</span>
+            <span action="Delete">Delete</span>
+            <span action="View">View</span>
+            <div purpose="name">name</div>
+        </div>
+        <a purpose="path" rid=""></a>
+        <div purpose="notepad-menu" class="notepad-menu">
+          
+            <span action="save" class="material-icons">save</span>
+            <span pressed="false" action="bold" class="material-icons">format_bold</span>
+            <span pressed="false" action="italic" class="material-icons">format_italic</span>
+            <span pressed="false" action="underline" class="material-icons">format_underline</span>
+            <input type="color" action="bg-color"/>
+            <input type="color" action="tx-color"/>
+            <select action="font-family">
+                <option value="monospace">monospace</option>
+                <option value="serif">serif</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="cursive">cursive</option>
+            </select>
+            <select action="font-size">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12">12</option>
+                <option value="14">14</option>
+                <option value="16">16</option>
+                <option value="18">18</option>
+            </select>
+            
+        </div>
+       
+        
+        <div purpose="notepad-body" class="notepad-body">
+            <textarea ></textarea>
+        </div>
+        
+
+
+        
     </template>
 
-    <script type="text/javascript " src="main.js "></script>
+    <script type="text/javascript " src="main.js"></script>
 </body>
 
 </html>

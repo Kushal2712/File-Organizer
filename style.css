@@ -15,6 +15,7 @@
     #breadcumb a {
         background-color: tomato;
         padding: 8px;
+        margin:3px
     }
     
     .folder {
@@ -33,6 +34,16 @@
         cursor: pointer;
         width: 200px;
         height: 60px
+    }
+
+    .file {
+        background-color:tan;
+        border-radius: 5px;
+      
+        height: 120px;
+        width: 130px;
+        margin: 5px;
+        padding-left: 5px;
     }
     
     #textfile {
@@ -58,4 +69,87 @@
         align-items: center;
         margin-left: 500px;
     }
+
+    #app{
+        margin: 10px;
+        border: 2px solid black;
+    }
+    
+   
+    #app-titlebar{
+        display: flex;
+        background-color:darkslategray;
+        height: 40px;
+        font-size: large;
+       
+       
+    }
+    #app-title{
+        width:92%; 
+        text-align:center;
+       border-right: 5px solid black ;
+       
+    }
+
+    #app-menubar{
+        display: flex;
+        background-color:lightslategrey;
+        height: 40px;
+       
+    }
+    #app-body{
+        display: flex;
+        height: 500px;
+       
+    }
+
+    .notepad-menu{
+        margin: 0px 5px;
+        padding:3px;
+        cursor: pointer;
+        border-radius: 2px ;
+       
+    }
+
+    
+    .notepad-menu span{
+        border-radius: 2px;
+       vertical-align: bottom;
+    }
+    .notepad-menu select{
+        height: 30px;
+        
+     }
+
+     .notepad-menu [pressed=true]{
+        border: 2px;
+        background-color: white;
+        color: teal;
+    }
+
+    .notepad-menu span:hover{
+        border: 2px;
+        background-color: white;
+        color: teal;
+    }
+
+    .notepad-menu input[type=color]{
+        width: 30px;
+       
+    }
+
+    .notepad-body {
+        width: 100%;
+        height: 100%;
+
+    }
+
+
+    .notepad-body textarea{
+        width: 100%;
+        height: 100%;
+
+    }
+    
+
     /*margin hota hai border k bhar and padding hota hai border k andr
